@@ -16,7 +16,8 @@
     "settings": "Settings",
     "basicSettings": "Basic Settings",
     "exampleComponents": "Example components",
-    "forgot-password": "Forgot Password"
+    "forgot-password": "Forgot Password",
+    "jsx": "JSX Demo"
   },
   "mock": {
     "fromAsyncData": "Data from asynchronous requests",

@@ -43,7 +43,7 @@ async function reset() {
 
     if (res.code === 0) {
       showNotify({ type: 'success', message: t('forgot-password.passwordResetSuccess') })
-      router.push({ name: 'login' })
+      router.push({ name: 'Login' })
     }
   }
   finally {
@@ -136,12 +136,3 @@ async function getCode() {
     </GhostButton>
   </div>
 </template>
-
-<route lang="json5">
-{
-  name: 'forgot-password',
-  meta: {
-    i18n: 'menus.forgot-password'
-  },
-}
-</route>

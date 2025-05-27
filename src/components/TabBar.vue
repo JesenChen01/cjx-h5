@@ -4,7 +4,7 @@ import { routeWhiteList } from '@/config/routes'
 const active = ref(0)
 const route = useRoute()
 
-const show = computed(() => route.name && routeWhiteList.includes(route.name))
+const show = computed(() => route.name && routeWhiteList.includes(route.name as string))
 </script>
 
 <template>

@@ -47,7 +47,7 @@ async function register() {
 
     if (res.code === 0) {
       showNotify({ type: 'success', message: t('register.registerSuccess') })
-      router.push({ name: 'login' })
+      router.push({ name: 'Login' })
     }
   }
   finally {
@@ -149,12 +149,3 @@ async function getCode() {
     </GhostButton>
   </div>
 </template>
-
-<route lang="json5">
-{
-  name: 'register',
-  meta: {
-    i18n: 'menus.register'
-  },
-}
-</route>

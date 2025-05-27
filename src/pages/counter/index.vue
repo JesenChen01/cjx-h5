@@ -28,13 +28,3 @@ function add() {
     Add
   </button>
 </template>
-
-<route lang="json5">
-{
-  name: 'counter',
-  meta: {
-    title: '🍍 持久化 Pinia 状态',
-    i18n: 'menus.persistPiniaState'
-  },
-}
-</route>

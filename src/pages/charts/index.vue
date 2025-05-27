@@ -64,13 +64,3 @@ const refScoreOption = ref(scoreOption)
   <Chart :option="refLineOption" :style="{ height: '330px' }" />
   <Chart :option="refScoreOption" :style="{ height: '330px' }" />
 </template>
-
-<route lang="json5">
-{
-  name: 'charts',
-  meta: {
-    title: '📊 Echarts 演示',
-    i18n: 'menus.echartsDemo'
-  },
-}
-</route>

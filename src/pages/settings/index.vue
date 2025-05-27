@@ -14,7 +14,7 @@ function Logout() {
   })
     .then(() => {
       userStore.logout()
-      router.push({ name: 'home' })
+      router.push({ name: 'Home' })
     })
     .catch(() => {})
 }
@@ -37,13 +37,3 @@ function Logout() {
   --van-cell-text-color: var(--van-red);
 }
 </style>
-
-<route lang="json5">
-{
-  name: 'settings',
-  meta: {
-    title: '我的设置',
-    i18n: 'menus.settings'
-  },
-}
-</route>

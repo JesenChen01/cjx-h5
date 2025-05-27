@@ -9,12 +9,12 @@ import AutoImport from 'unplugin-auto-import/vite'
 import { VantResolver } from '@vant/auto-import-resolver'
 import Components from 'unplugin-vue-components/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
-import VueRouter from 'unplugin-vue-router/vite'
 import { mockDevServerPlugin } from 'vite-plugin-mock-dev-server'
 import { VitePWA } from 'vite-plugin-pwa'
 import Sitemap from 'vite-plugin-sitemap'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import { loadEnv } from 'vite'
 import { createViteVConsole } from './vconsole'
 
@@ -22,14 +22,13 @@ export function createVitePlugins(mode: string) {
   const env = loadEnv(mode, process.cwd())
 
   return [
-    // https://github.com/posva/unplugin-vue-router
-    VueRouter({
-      extensions: ['.vue'],
-      routesFolder: 'src/pages',
-      dts: 'src/types/typed-router.d.ts',
-    }),
-
     vue(),
+
+    // https://github.com/vitejs/vite/tree/main/packages/plugin-vue-jsx
+    vueJsx({
+      // options are passed on to @vue/babel-plugin-jsx
+      optimize: true,
+    }),
 
     // https://github.com/jbaubree/vite-plugin-sitemap
     Sitemap({

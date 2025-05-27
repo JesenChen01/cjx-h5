@@ -11,13 +11,3 @@
     Button
   </button>
 </template>
-
-<route lang="json5">
-{
-  name: 'unocss',
-  meta: {
-    title: '🎨 Unocss 示例',
-    i18n: 'menus.unocssExample'
-  },
-}
-</route>

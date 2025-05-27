@@ -10,13 +10,14 @@ const checked = computed({
 })
 
 const menuItems = computed(() => ([
-  { title: t('menus.mockGuide'), route: 'mock' },
-  { title: t('menus.echartsDemo'), route: 'charts' },
-  { title: t('menus.unocssExample'), route: 'unocss' },
-  { title: t('menus.persistPiniaState'), route: 'counter' },
-  { title: t('menus.keepAlive'), route: 'keepalive' },
+  { title: t('menus.mockGuide'), route: 'Mock' },
+  { title: t('menus.echartsDemo'), route: 'Charts' },
+  { title: t('menus.unocssExample'), route: 'Unocss' },
+  { title: t('menus.persistPiniaState'), route: 'Counter' },
+  { title: t('menus.keepAlive'), route: 'keep-alive' },
   { title: t('menus.scrollCache'), route: 'scroll-cache' },
   { title: t('menus.404Demo'), route: 'unknown' },
+  { title: t('menus.jsx'), route: 'Jsx' },
 ]))
 
 const showLanguagePicker = ref(false)
@@ -64,13 +65,3 @@ function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
     />
   </van-popup>
 </template>
-
-<route lang="json5">
-{
-  name: 'home',
-  meta: {
-    title: '主页',
-    i18n: 'menus.home'
-  },
-}
-</route>

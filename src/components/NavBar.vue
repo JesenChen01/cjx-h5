@@ -20,7 +20,7 @@ const title = computed(() => {
   return route.meta.i18n ? t(route.meta.i18n) : (route.meta.title || '')
 })
 
-const showLeftArrow = computed(() => route.name && routeWhiteList.includes(route.name))
+const showLeftArrow = computed(() => route.name && routeWhiteList.includes(route.name as string))
 </script>
 
 <template>
