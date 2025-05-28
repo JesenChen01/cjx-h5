@@ -101,5 +101,8 @@
     "logout": "Sign Out",
     "currentVersion": "Current Version",
     "comfirmTitle": "Confirm Exit?"
+  },
+  "store": {
+    "manage": "Store Manage"
   }
 }

@@ -6,7 +6,7 @@ import legacy from '@vitejs/plugin-legacy'
 import vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import { VantResolver } from '@vant/auto-import-resolver'
+// import { VantResolver } from '@vant/auto-import-resolver'
 import Components from 'unplugin-vue-components/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import { mockDevServerPlugin } from 'vite-plugin-mock-dev-server'
@@ -41,7 +41,7 @@ export function createVitePlugins(mode: string) {
     // https://github.com/antfu/unplugin-vue-components
     Components({
       extensions: ['vue'],
-      resolvers: [VantResolver()],
+      // resolvers: [VantResolver()],
       include: [/\.vue$/, /\.vue\?vue/],
       dts: 'src/types/components.d.ts',
     }),
@@ -68,7 +68,7 @@ export function createVitePlugins(mode: string) {
       dirs: [
         'src/composables',
       ],
-      resolvers: [VantResolver()],
+      // resolvers: [VantResolver()],
     }),
 
     // https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n

@@ -101,5 +101,8 @@
     "logout": "退出登录",
     "currentVersion": "当前版本",
     "comfirmTitle": "确认退出？"
+  },
+  "store": {
+    "manage": "门店管理"
   }
 }

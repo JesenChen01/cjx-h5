@@ -18,6 +18,7 @@ const menuItems = computed(() => ([
   { title: t('menus.scrollCache'), route: 'scroll-cache' },
   { title: t('menus.404Demo'), route: 'unknown' },
   { title: t('menus.jsx'), route: 'Jsx' },
+  { title: t('store.manage'), route: 'store-manage' },
 ]))
 
 const showLanguagePicker = ref(false)

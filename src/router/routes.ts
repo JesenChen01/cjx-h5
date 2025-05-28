@@ -118,6 +118,15 @@ const routes = [
     },
   },
   {
+    name: 'store-manage',
+    path: '/store-manage',
+    component: () => import('@/pages/store-manage/createStore.vue'),
+    meta: {
+      title: 'StoreManage',
+      i18n: 'store.manage',
+    },
+  },
+  {
     name: '404',
     path: '/:pathMatch(.*)*',
     component: () => import('@/pages/exception/404.vue'),
